@@ -30,7 +30,7 @@ Please review the documentation of the s2i-liberty image to understand better ho
 
 OpenShift is capable of building docker images directly, and that is what we will be doing here:
 
-```oc new-build websphere-liberty:javaee7~https://github.com/gnunn1/containers-quickstarts --context-dir=s2i-liberty --name=s2i-liberty --strategy=docker```
+```oc new-build websphere-liberty:javaee7~https://github.com/rlzh/containers-quickstarts --context-dir=s2i-liberty --name=s2i-liberty --strategy=docker```
 
 This builds a new docker image using the official ```websphere-liberty:javaee7``` as the base and layering on the dockerfile from ```https://github.com/gnunn1/containers-quickstarts``` to add the s2i capabilities.
 
